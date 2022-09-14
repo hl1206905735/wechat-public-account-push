@@ -42,7 +42,7 @@ export const config = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "name": "平宝", "year": "2000", "date": "07-22"},
-       {"type": "*节日", "name": "除夕", "year": "2022", "date": "12-30"},
+       {"type": "节日", "name": "除夕", "year": "2023", "date": "01-21"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
      //  {"type": "*生日", "name": "小胡", "year": "1999", "date": "09-25"},
         {"type": "节日", "name": "国庆", "year": "2022", "date": "10-01"},
@@ -52,11 +52,11 @@ export const config = {
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
-        {"keyword": "love_day", date: "2022-09-08"},
+       // {"keyword": "love_day", date: "2022-09-08"},
         // 结婚纪念日
-        {"keyword": "marry_day", date: "2022-09-09"},
+      //  {"keyword": "marry_day", date: "2022-09-09"},
         // 退伍日
-        {"keyword": "ex_day", date: "2022-09-10"},
+       // {"keyword": "ex_day", date: "2022-09-10"},
       ]
     },
    
