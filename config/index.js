@@ -35,17 +35,21 @@ export const config = {
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '08-21',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
-      horoscopeDateType: '今日',
+      horoscopeDateType: '',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: "https://weibo.com/wicen?",
+      openUrl: "https://weibo.com/",
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "亦知", "year": "2000", "date": "07-22"},
-        {"type": "节日", "name": "可爱纪念日", "year": "2022", "date": "09-14"},
+        {"type": "*生日", "name": "平宝", "year": "2000", "date": "07-22"},
+          {"type": "*节日", "name": "立冬", "year": "2022", "date": "10-14"},
+         {"type": "*节日", "name": "冬至", "year": "2022", "date": "11-29"},
+       {"type": "*节日", "name": "除夕", "year": "2022", "date": "12-30"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
-        {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+     //  {"type": "*生日", "name": "小胡", "year": "1999", "date": "09-25"},
+        {"type": "节日", "name": "国庆", "year": "2022", "date": "10-01"},
+           {"type": "节日", "name": "圣诞节", "year": "2022", "date": "12-25"},
+          {"type": "节日", "name": "2022年的结束", "year": "2023", "date": "01-01"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
@@ -57,42 +61,7 @@ export const config = {
         {"keyword": "ex_day", date: "2022-09-10"},
       ]
     },
-    {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
-      name: "老婆2",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
-      name: "老婆3",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
+   
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -102,7 +71,7 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "	ijItdEqnri4ijmpdfmfgypR1KrFjLG9NISVQ3NGAUlQ",
+  CALLBACK_TEMPLATE_ID: "ijItdEqnri4ijmpdfmfgypR1KrFjLG9NISVQ3NGAUlQ",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -148,11 +117,11 @@ export const config = {
    */
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "发发", "year": "1996", "date": "09-09", isShowAge: true},
-    {"type": "节日", "name": "测试纪念日", "year": "2020", "date": "09-03"},
+  //  {"type": "*生日", "name": "发发", "year": "1996", "date": "09-09", isShowAge: true},
+ //   {"type": "节日", "name": "测试纪念日", "year": "2020", "date": "09-03"},
     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {"type": "生日", "name": "李四", "year": "1996", "date": "09-31", isShowAge: true},
-    {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+ //   {"type": "生日", "name": "李四", "year": "1996", "date": "09-31", isShowAge: true},
+   // {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -162,7 +131,7 @@ export const config = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  FESTIVALS_LIMIT: 0,
 
   /** 日期相关 */
 
@@ -172,11 +141,11 @@ export const config = {
     * */
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
-    {"keyword": "love_day", date: "2022-09-08"},
+  //  {"keyword": "love_day", date: "2022-09-08"},
     // 结婚纪念日
-    {"keyword": "marry_day", date: "2022-09-09"},
+   // {"keyword": "marry_day", date: "2022-09-09"},
     // 退伍日
-    {"keyword": "ex_day", date: "2022-09-10"},
+  //  {"keyword": "ex_day", date: "2022-09-10"},
     // 你可以不断按格式往下增加
     // ...
   ],
