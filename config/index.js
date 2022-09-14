@@ -15,7 +15,7 @@ export const config = {
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
-  isShowColor: true,
+  isShowColor: false,
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
@@ -70,9 +70,9 @@ export const config = {
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "SHidQIEy6G-0a4kGVf8bLFy2T_pN4miZ3y_xJMoE2lo",
       // 所在省份
-      province: "广东",
+      province: "浙江",
       // 所在城市
-      city: "深圳",
+      city: "宁波",
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '08-21',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
@@ -83,6 +83,7 @@ export const config = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "name": "平宝", "year": "2000", "date": "07-22"},
+         {"type": "*生日", "name": "胡某人", "year": "1999", "date": "09-25"},
        {"type": "节日", "name": "除夕", "year": "2023", "date": "01-21"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
      //  {"type": "*生日", "name": "小胡", "year": "1999", "date": "09-25"},
